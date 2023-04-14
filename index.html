@@ -1,20 +1,124 @@
-<h1> Nicolas Menand </h1>
-<p> I'm a student at UCSC studying Computer Science. I'm mainly interested in Theoretical Computer Science, but I find other areas of C.S. and Math fascinating too. My other hobbies include climbing, cooking, and learning new languages.</p>
+<html>
+ <head>
+   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <style>
+    {
+        box-sizing: border-box;
+    }
+    /* Set additional styling options for the columns */
+    .column {
+    float: left;
+    }
 
-<h2> Academics </h2>
-<ul>
-  <li>M.S. in Computer Science and Engineering, UCSC, 2021 - 2022 </li>
-  <li> B.S. in Mathematics, UCSC, 2017 - 2021</li>
-  <li> B.S. in Computer Science, UCSC, 2017 - 2021</li>
-</ul>
+    /* Set width length for the left, right and middle columns */
+    .left {
+    width: 25%;
+    padding-right: 10px;
+    border-right: 1px solid black;
+    }
 
-<h2> Work Experience </h2>
-<ul>
-  <li>Teaching Assistant, Intro to Data Structures and Algorithms, Fall 2021 </li>
-  <li>SDE Intern, Amazon, Summer 2021</li>
-  <li> Tutor, Intro to Data Structures and Algorithms, Fall 2020 </li>
-   <li>SDE Intern, Amazon, Summer 2020</li>
-</ul>
+    .middle {
+    width: 25%;
+    }
+    
+    .right {
+    width: 50%;
+    padding-left: 10px;
+    }
 
-<h2> Contact </h2>
-Contact me via email at nmenand@ucsc.edu.
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+
+    .link {
+      color: #2962FF;
+      text-decoration: none;
+    }
+    </style>
+ </head>
+ <body>
+  <table style="padding-left: 170px; padding-right: 170px; font-family: 'Montserrat',sans-serif;font-size: 22px;">
+    <tr>
+      <td style="vertical-align:top">
+        <div style="border-right: 1px solid black;">
+          <img src="prof.jpg" style="width:180px;height:180px; padding:30px"/>
+          <h3 style="text-align: center;margin-top:-10px;"> Nicolas Menand</h3>
+          <p style="text-align: center;margin-top:-20px;font-size:large;"> Incoming PhD Student, </br> <a href="https://theory.cis.upenn.edu/" class="link">University of Pennsylvania <a><p>
+          <p style="text-align: center;margin-top:-10px;padding-right:10px;padding-bottom:10px;font-size:medium; font-family: 'Courier';"> nmenand@seas.upenn.edu </br> nmenand@ucsc.edu</p>  
+          <p> cv gh li gscholar <p>
+        </div>
+      </td>
+      <td style="padding-left: 10px;"> 
+        <h3> About </h3>
+        <p style="margin-top:-20px;font-size:large;"> 
+          I am an incoming PhD student at the University of Pennsylvania, where I will be advised by <a href="https://sites.google.com/site/erikwaing/home" target="_blank" class="link">
+          Erik Waingarten</a>. I was previously a student at UC Santa Cruz, where I had the pleasure of being advised by <a href="https://users.soe.ucsc.edu/~sesh/" target="_blank" class="link">
+          C. Seshadhri</a>. There I also had the priviledge of participating in the <a href='https://linqs.org/' target="_blank" class="link"> Linqs Learning Lab </a> as an undergraduate.
+        </p>
+        <p style="font-size:large;"> 
+          My research interests lie mostly in theoretical computer science.
+        </p>
+
+        <h3> Education </h3>
+        <img src="sheild.svg" style="width:55px;height:55px;vertical-align:text-bottom;float:left;margin-top:-20px;margin-right:10px;"/> <p style="margin-top:-20px;font-size:large"> PhD in Computer and Information Science, </br> University of Pennsylvania, Starting Fall 2023 <p>
+        <img src="slug.png" style="width:64px;height:64px;vertical-align:text-bottom;float:left;margin-right:5px;"/> <p style="font-size:large"> M.S. in Computer Science and Engineering, </br> University of California, Santa Cruz, 2021 - 2022 <p>
+          <ul style="margin-top:-20px;padding-left:90px;">
+            <li style="font-size:medium;"> Advisor: C. Seshadhri </li>
+            <li style="font-size:medium;"> GPA: 3.96</li>
+          </ul>        
+        <img src="slug.png" style="width:64px;height:64px;vertical-align:text-bottom;float:left;margin-right:5px;"/> <p style="font-size:large"> B.S. in Computer Science & B.S. in Mathematics, </br> University of California, Santa Cruz, 2017 - 2021<p>
+        <ul style="margin-top:-20px;padding-left:90px;">
+          <li style="font-size:medium;"> GPA: 3.82 </li>
+          <li style="font-size:medium;"> Departmental Honors: Highest Honors in the Major (Both Majors)</li>
+          <li style="font-size:medium;"> Senior Thesis (Computer Science): <a href="https://github.com/NMenand/PSL-KGE" target="_blank" class="link"> Knowledge Graph Embeddings in Probablistic Soft Logic </a> </li>
+          <li style="font-size:medium;"> Senior Paper (Mathematics): <a href="https://drive.google.com/file/d/1uC71TTZf7nbBm6U4Tl5WKxbfg5blGsbZ/view" target="_blank" class="link"> Graph Coloring and Ramsey Theory </a> </li>
+        </ul>      
+          <h3> Publications </h3>
+          <ul>
+            <li style="font-size:large"> Link prediction using low-dimensional graph embeddings: the measurement problem, N. Menand, C. Seshadhri, In Submission. <a class='link' href="https://arxiv.org"> placeholder </a> </li>
+          </ul>   
+          <h3> Teaching </h3>  
+          <ul style="font-size:large">
+            <li style="font-size:large">Teaching Assistant, <a href="https://classes.soe.ucsc.edu/cse016/Winter22/" target="_blank" class="link"> Applied Discrete Mathematics</a>, Winter 2022 </li>
+            <li style="font-size:large">Teaching Assistant, <a href="https://users.soe.ucsc.edu/~sesh/Teaching/2021/CSE101/" target="_blank" class="link"> Intro to Data Structures and Algorithms</a>, Fall 2021 </li>
+            <li style="font-size:large"> Tutor, <a href="https://users.soe.ucsc.edu/~sesh/Teaching/2020/CSE101-fall/" target="_blank" class="link"> Intro to Data Structures and Algorithms</a>, Fall 2020 </li>
+          </ul>      
+
+          <h3> Industry Experience </h3>
+         <img src="meta.svg" style="width:40px;height:40px;vertical-align:text-bottom;float:left;margin-right:5px;"/> <p style="font-size:large">Software Engineer, Meta, <br/> December 2022 - December 2022 &#128540;</p>
+         <img src="amazon.svg" style="width:40px;height:40px;vertical-align:text-bottom;float:left;margin-right:5px;"/> <p style="font-size:large">Software Development Engineer Intern, Amazon, <br/> June 2022 - August 2022</p>
+         <img src="amazon.svg" style="width:40px;height:40px;vertical-align:text-bottom;float:left;margin-right:5px;"/> <p style="font-size:large">Software Development Engineer Intern, Amazon, <br/> June 2021 - August 2021</p>
+         <img src="amazon.svg" style="width:40px;height:40px;vertical-align:text-bottom;float:left;margin-right:5px;"/> <p style="font-size:large">Software Development Engineer Intern, Amazon, <br/> June 2020 - August 2020</p>
+         <h3> Other </h3>
+         <h5> Honors & Awards </h5>
+         <ul style="margin-top:-20px;font-size:large">
+          <li> University of Pennsylvania Graduate Fellowship, 2023-2024</li> 
+          <li> Phi Beta Kappa, 2021 </li> 
+          <li> Department & University Honors, UC Santa Cruz, 2021 </li> 
+
+        </ul>   
+         <h5> Scribe Notes </h5>
+          <ul style="margin-top:-20px;font-size:large">
+            <li> CSE290A: Randomized Algorithms
+              <ul>
+                <li> <a href="https://users.soe.ucsc.edu/~sesh/Teaching/2020/CSE290A/Slides/Lecture9.pdf" target="_blank" class="link"> Lecture 9: The Chernoff Bound and Moment Generating
+                  Functions </a> </li>
+                <li> <a href="https://users.soe.ucsc.edu/~sesh/Teaching/2020/CSE290A/Slides/Lecture18.pdf" target="_blank" class="link"> Lecture 18 Follow the Perturbed Leader </a> </li>
+              </ul>
+            </li> 
+            <li> CSE216: Formal Methods
+              <ul>
+                <li> <a href="https://drive.google.com/file/d/1YNTsbD_pYbwkxm2SyU_UKOtKE8gE1vvE/view" target="_blank" class="link"> Lecture 7: Conflict Driven Clause Learning (CDCL) </a> </li>
+                <li> <a href="https://drive.google.com/file/d/1U3hExViPLAH4saJ2G_vFigpjX_yetLud/view" target="_blank" class="link"> Lecture 20: Reactive Synthesis from LTL specifications </a> </li>
+              </ul>
+            </li>
+          </ul>   
+ 
+
+      </td>
+    </tr>
+  </table>
+  </body>
+</html>
