@@ -1,121 +1,150 @@
 <html>
  <head>
-   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <style>
-    {
-        box-sizing: border-box;
-    }
-    /* Set additional styling options for the columns */
-    .column {
-    float: left;
-    }
-
-    /* Set width length for the left, right and middle columns */
-    .left {
-    width: 25%;
-    padding-right: 10px;
-    border-right: 1px solid black;
-    }
-
-    .middle {
-    width: 25%;
-    }
-    
-    .right {
-    width: 50%;
-    padding-left: 10px;
-    }
-
-    .row:after {
-    content: "";
-    display: table;
-    clear: both;
-    }
-
-    .link {
-      color: #2962FF;
-      text-decoration: none;
-    }
-    </style>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="assets/css/academicons/css/academicons.min.css" rel="stylesheet">
+  <script defer src="assets/css/fontawesome/js/all.min.js"></script>
  </head>
- <body>
-  <table style="padding-left: 170px; padding-right: 170px; font-family: 'Montserrat',sans-serif;font-size: 22px;">
+ <body >
+  <table style="width: 1100px; margin-left:auto; margin-right:auto;font-size: 22px;">
     <tr>
       <td style="vertical-align:top">
-        <div style="border-right: 1px solid black;">
-          <img src="prof.jpg" style="width:180px;height:180px; padding:30px"/>
-          <h3 style="text-align: center;margin-top:-10px;"> Nicolas Menand</h3>
-          <p style="text-align: center;margin-top:-20px;font-size:large;"> Incoming PhD Student, </br> <a href="https://theory.cis.upenn.edu/" class="link">University of Pennsylvania <a><p>
-          <p style="text-align: center;margin-top:-10px;padding-right:10px;padding-bottom:10px;font-size:medium; font-family: 'Courier';"> nmenand@seas.upenn.edu </br> nmenand@ucsc.edu</p>  
-          <p> cv gh li gscholar <p>
+        <div class="sidebar">
+          <img src="assets/headshot.jpg" class="portrait"/>
+          <h3 class="name">Nicolas Menand</h3>
+          <p class="position"> PhD Student </br> <a href="https://theory.cis.upenn.edu/" target="_blank"  class="link">University of Pennsylvania <a><p>
+          <p class="contact"> nmenand@seas.upenn.edu </br> nmenand@ucsc.edu</p>  
+          <p class="icon-bar"> 
+            <a href='' class="icon-link">
+              <i class="ai ai-cv fa-2x wip-link"></i>
+            </a>
+            <a class="icon-link">
+              <i class="ai ai-google-scholar fa-2x wip-link" title="WIP"></i>
+            </a>
+            <a class="icon-link">
+              <i class="ai ai-dblp fa-2x wip-link" title="WIP"></i>
+            </a>
+            <a href='https://github.com/nmenand/' target="_blank" class="icon-link">
+              <i class="fa-brands fa-github fa-2x icon-link"></i>
+            </a>
+            <a href='https://www.linkedin.com/in/nicolas-menand-6138a015a/' target="_blank" class="icon-link">
+              <i class="fa-brands fa-linkedin fa-2x icon-link"></i>
+            </a>
+          <p>
         </div>
       </td>
-      <td style="padding-left: 10px;"> 
-        <h3> About </h3>
-        <p style="margin-top:-20px;font-size:large;"> 
-          I am an incoming PhD student at the University of Pennsylvania, where I will be advised by <a href="https://sites.google.com/site/erikwaing/home" target="_blank" class="link">
-          Erik Waingarten</a>. I was previously a student at UC Santa Cruz, where I had the pleasure of being advised by <a href="https://users.soe.ucsc.edu/~sesh/" target="_blank" class="link">
-          C. Seshadhri</a>. There I also had the priviledge of participating in the <a href='https://linqs.org/' target="_blank" class="link"> Linqs Learning Lab </a> as an undergraduate.
-        </p>
-        <p style="font-size:large;"> 
-          My research interests lie mostly in theoretical computer science.
-        </p>
 
-        <h3> Education </h3>
-        <img src="sheild.svg" style="width:55px;height:55px;vertical-align:text-bottom;float:left;margin-top:-20px;margin-right:10px;"/> <p style="margin-top:-20px;font-size:large"> PhD in Computer and Information Science, </br> University of Pennsylvania, Starting Fall 2023 <p>
-        <img src="slug.png" style="width:64px;height:64px;vertical-align:text-bottom;float:left;margin-right:5px;"/> <p style="font-size:large"> M.S. in Computer Science and Engineering, </br> University of California, Santa Cruz, 2021 - 2022 <p>
-          <ul style="margin-top:-20px;padding-left:90px;">
-            <li style="font-size:medium;"> Advisor: C. Seshadhri </li>
-            <li style="font-size:medium;"> GPA: 3.96</li>
-          </ul>        
-        <img src="slug.png" style="width:64px;height:64px;vertical-align:text-bottom;float:left;margin-right:5px;"/> <p style="font-size:large"> B.S. in Computer Science & B.S. in Mathematics, </br> University of California, Santa Cruz, 2017 - 2021<p>
-        <ul style="margin-top:-20px;padding-left:90px;">
-          <li style="font-size:medium;"> GPA: 3.82 </li>
-          <li style="font-size:medium;"> Departmental Honors: Highest Honors in the Major (Both Majors)</li>
-          <li style="font-size:medium;"> Senior Thesis (Computer Science): <a href="https://github.com/NMenand/PSL-KGE" target="_blank" class="link"> Knowledge Graph Embeddings in Probablistic Soft Logic </a> </li>
-          <li style="font-size:medium;"> Senior Paper (Mathematics): <a href="https://drive.google.com/file/d/1uC71TTZf7nbBm6U4Tl5WKxbfg5blGsbZ/view" target="_blank" class="link"> Graph Coloring and Ramsey Theory </a> </li>
-        </ul>      
-          <h3> Publications </h3>
-          <ul>
-            <li style="font-size:large"> Link prediction using low-dimensional graph embeddings: the measurement problem, N. Menand, C. Seshadhri, In Submission. <a class='link' href="https://arxiv.org"> placeholder </a> </li>
-          </ul>   
-          <h3> Teaching </h3>  
-          <ul style="font-size:large">
-            <li style="font-size:large">Teaching Assistant, <a href="https://classes.soe.ucsc.edu/cse016/Winter22/" target="_blank" class="link"> Applied Discrete Mathematics</a>, Winter 2022 </li>
-            <li style="font-size:large">Teaching Assistant, <a href="https://users.soe.ucsc.edu/~sesh/Teaching/2021/CSE101/" target="_blank" class="link"> Intro to Data Structures and Algorithms</a>, Fall 2021 </li>
-            <li style="font-size:large"> Tutor, <a href="https://users.soe.ucsc.edu/~sesh/Teaching/2020/CSE101-fall/" target="_blank" class="link"> Intro to Data Structures and Algorithms</a>, Fall 2020 </li>
+      <td style="padding-left: 10px;">
+        <div class='info'>
+          <h3 style="display: flex; justify-content: space-between;">
+            <span class="header">About</span>
+            <button onclick="darkMode()" class="theme-toggle">
+              <i class="far fa-lightbulb-slash fa-2x toggle-on"></i>
+              <i class="fas fa-lightbulb-on fa-2x toggle-off"></i>
+            </button>
+          </h3>
+          <p class="top large"> 
+            I am an incoming PhD student in Computer Science at the University of Pennsylvania, where I will be advised by <a href="https://sites.google.com/site/erikwaing/home" target="_blank" class="link">
+            Erik Waingarten</a>. I graduated from UC Santa Cruz with a Master's and Bachelor's in Computer Science and a Bachelor's in Mathematics. There I had the pleasure of being advised by <a href="https://users.soe.ucsc.edu/~sesh/" target="_blank" class="link">
+            C. Seshadhri</a>, with whom I researched the properties and limitations of low-dimensional graph embeddings.
+          </p>
+          <p class="large "> 
+            My research interests lie mostly in theoretical computer science.          </p>
+        </div>
+
+        <div class='education'>
+          <h3 class="header"> Education </h3>
+          <img src="assets/icons/sheild.svg" class="sheild-icon"/> <p class="large top"> PhD in Computer and Information Science, </br> University of Pennsylvania, 2023 - Present <p>
+          <img src="assets/icons/slug.png" class="slug-icon"/> <p class="large"> M.S. in Computer Science and Engineering, </br> University of California, Santa Cruz, 2021 - 2022 <p>
+            <ul class="list-edu">
+              <li> Advisor: C. Seshadhri </li>
+              <li> GPA: 3.96</li>
+            </ul>        
+          <img src="assets/icons/slug.png" class="slug-icon"/> <p class="large"> B.S. in Computer Science & B.S. in Mathematics, </br> University of California, Santa Cruz, 2017 - 2021<p>
+          <ul class="list-edu">
+            <li> GPA: 3.82 </li>
+            <li> Senior Thesis (Computer Science): <a href="https://github.com/nmenand/PSL-KGE" target="_blank" class="link"> Knowledge Graph Embeddings in Probablistic Soft Logic </a> </li>
+            <li> Senior Paper (Mathematics): Graph Coloring and Ramsey Theory </li>
+          </ul>
+        </div>
+
+        <div class='publication'>
+          <h3 class="header"> Publications </h3>
+          <dl class="top large">
+            <dt class="title"> Title </dt>
+            <dt class="author">Authors </dt>
+            <dt class="venue">Venue. (Year)</dt>
+            <dt>
+              <button id='paper-button' class="text-button" onclick="toggleAbstract('paper')"> 
+                 Abstract <i class="fas fa-arrow-down"></i>
+              </button>
+              <a class="text-button" href="" target="_blank"> ArXiv <i class="ai ai-arxiv"></i> </a>
+              <a class="text-button" href="" target="_blank"> PDF <i class="far fa-file"></i> </a>
+            </dt>
+            <dt class="abstract" id="paper"><div> 
+            Text
+            </div></dt>
+
+          </dl>
+        </div>
+
+        <div class='teaching'>
+          <h3 class="header"> Teaching </h3>  
+          <ul class="top large">
+            <li >Teaching Assistant, <a href="https://classes.soe.ucsc.edu/cse016/Winter22/" target="_blank" class="link"> Applied Discrete Mathematics</a>, Winter 2022 </li>
+            <li >Teaching Assistant, <a href="https://users.soe.ucsc.edu/~sesh/Teaching/2021/CSE101/" target="_blank" class="link"> Intro to Data Structures and Algorithms</a>, Fall 2021 </li>
+            <li > Tutor, <a href="https://users.soe.ucsc.edu/~sesh/Teaching/2020/CSE101-fall/" target="_blank" class="link"> Intro to Data Structures and Algorithms</a>, Fall 2020 </li>
           </ul>      
+        </div>
 
-          <h3> Industry Experience </h3>
-         <img src="meta.svg" style="width:40px;height:40px;vertical-align:text-bottom;float:left;margin-right:5px;"/> <p style="font-size:large">Software Engineer, Meta, <br/> December 2022 - December 2022 &#128540;</p>
-         <img src="amazon.svg" style="width:40px;height:40px;vertical-align:text-bottom;float:left;margin-right:5px;"/> <p style="font-size:large">Software Development Engineer Intern, Amazon, <br/> June 2022 - August 2022</p>
-         <img src="amazon.svg" style="width:40px;height:40px;vertical-align:text-bottom;float:left;margin-right:5px;"/> <p style="font-size:large">Software Development Engineer Intern, Amazon, <br/> June 2021 - August 2021</p>
-         <img src="amazon.svg" style="width:40px;height:40px;vertical-align:text-bottom;float:left;margin-right:5px;"/> <p style="font-size:large">Software Development Engineer Intern, Amazon, <br/> June 2020 - August 2020</p>
-         <h3> Other </h3>
-         <h5> Honors & Awards </h5>
-         <ul style="margin-top:-20px;font-size:large">
-          <li> University of Pennsylvania Graduate Fellowship, 2023-2024</li> 
-          <li> Phi Beta Kappa, 2021 </li> 
-          <li> Department & University Honors, UC Santa Cruz, 2021 </li> 
+        <div class='other'>
+          <h3 class="header"> Other </h3>
+          <div class='awards top'>
+            <h5> Honors & Awards </h5>
+            <ul class="top large">
+              <li> University of Pennsylvania Graduate Fellowship, 2023-2024</li> 
+              <li> Highest Honors in the Major (Computer Science), UC Santa Cruz, 2021 </li>
+              <li> Highest Honors in the Major (Mathematics), UC Santa Cruz, 2021 </li>
+              <li> University Honors, UC Santa Cruz, 2021 </li> 
+          </div>
+          <div class='industry'>
+            <h5> Industry Experience </h5>
+            <img src="assets/icons/meta.svg" class="logo top"/> <p class="top large">Software Engineer, Meta, <br/> December 2022 - December 2022 &#128546;</p>
+            <div class="amz-logo"></div> <p class="large">Software Development Engineer Intern, Amazon, <br/> June 2022 - August 2022</p>
+            <div class="amz-logo"></div> <p class="large">Software Development Engineer Intern, Amazon, <br/> June 2021 - August 2021</p>
+            <div class="amz-logo"></div> <p class="large">Software Development Engineer Intern, Amazon, <br/> June 2020 - August 2020</p>
+           </div>
 
-        </ul>   
-         <h5> Scribe Notes </h5>
-          <ul style="margin-top:-20px;font-size:large">
-            <li> CSE290A: Randomized Algorithms
-              <ul>
-                <li> <a href="https://users.soe.ucsc.edu/~sesh/Teaching/2020/CSE290A/Slides/Lecture9.pdf" target="_blank" class="link"> Lecture 9: The Chernoff Bound and Moment Generating
-                  Functions </a> </li>
-                <li> <a href="https://users.soe.ucsc.edu/~sesh/Teaching/2020/CSE290A/Slides/Lecture18.pdf" target="_blank" class="link"> Lecture 18 Follow the Perturbed Leader </a> </li>
-              </ul>
-            </li> 
-            <li> CSE216: Formal Methods
-              <ul>
-                <li> <a href="https://drive.google.com/file/d/1YNTsbD_pYbwkxm2SyU_UKOtKE8gE1vvE/view" target="_blank" class="link"> Lecture 7: Conflict Driven Clause Learning (CDCL) </a> </li>
-                <li> <a href="https://drive.google.com/file/d/1U3hExViPLAH4saJ2G_vFigpjX_yetLud/view" target="_blank" class="link"> Lecture 20: Reactive Synthesis from LTL specifications </a> </li>
-              </ul>
-            </li>
+          <div class='scribe'>
           </ul>   
- 
+          <h5> Notes </h5>
+           <ul class="top large">
+             <li> CSE290A: Randomized Algorithms
+               <ul>
+                 <li> <a href="https://users.soe.ucsc.edu/~sesh/Teaching/2020/CSE290A/Slides/Lecture9.pdf" target="_blank" class="link"> Lecture 9: The Chernoff Bound and Moment Generating
+                   Functions </a> </li>
+                 <li> <a href="https://users.soe.ucsc.edu/~sesh/Teaching/2020/CSE290A/Slides/Lecture18.pdf" target="_blank" class="link"> Lecture 18 Follow the Perturbed Leader </a> </li>
+               </ul>
+             </li> 
+           </ul>    
+          </div>
+        </div>
+        <script>
+        function darkMode() {
+          var element = document.body;
+          element.classList.toggle("dark-mode");
+        }
+        function toggleAbstract(title) {
+          var element = document.getElementById(title);
+          var button = document.getElementById(title+"-button");
+          if (element.style.display == "block") {
+            element.style.display = "none";
+            button.innerHTML =   'Abstract ' + '<i class="fas fa-arrow-down">' + '</i>';
+          } else {
+            element.style.display = "block";
+            button.innerHTML = 'Abstract ' + '<i class="fas fa-arrow-up">' + '</i>';
+          }
+        }
+        </script>
 
       </td>
     </tr>
