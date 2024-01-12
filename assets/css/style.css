@@ -253,11 +253,11 @@
   }
 
   .author {
-    color: black;
+    color: #625D5D;
   }
 
   .dark-mode .author {
-    color: white;
+    color: #b2b2b2;
   }
 
   .abstract {
@@ -278,7 +278,13 @@
     color: #c1b6df;
   }
 
+  .note {
+    color: #F40009;
+  }
 
+  .dark-mode .note {
+    color: #FF5A5F;
+  }
 
   .amz-logo {
     width:47px;
