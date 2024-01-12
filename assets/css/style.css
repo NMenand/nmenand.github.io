@@ -125,12 +125,9 @@
     }
 
   .sidebar {
-    border-right: 1px solid black;
     text-align: center;
-  }
-
-  .dark-mode .sidebar {
-    border-right: 1px solid white;
+    position: sticky;
+    top: 11;
   }
 
   .portrait {
