@@ -4,7 +4,7 @@
   <link href="assets/css/academicons/css/academicons.min.css" rel="stylesheet">
   <script defer src="assets/css/fontawesome/js/all.min.js"></script>
  </head>
- <body class="dark-mode" >
+ <body class="" >
   <table style="width: 1100px; margin-left:auto; margin-right:auto;font-size: 22px;">
     <tr>
       <td style="vertical-align:top">
@@ -12,7 +12,7 @@
           <img src="assets/headshot.jpg" class="portrait"/>
           <h3 class="name">Nicolas Menand</h3>
           <p class="position"> PhD Student </br> <a href="https://theory.cis.upenn.edu/" target="_blank"  class="link">University of Pennsylvania <a><p>
-          <p class="contact"> nmenand@seas.upenn.edu </br> nmenand@ucsc.edu</p>  
+          <p class="contact"> nmenand@seas.upenn.edu </p>  
           <p class="icon-bar"> 
           <!--
             <a class="icon-link">
@@ -78,19 +78,32 @@
           <dl class="top large">
             <dt class="title"> Link Prediction using Low-dimensional node embeddings: the measurement problem </dt>
             <dt class="author"> Nicolas Menand and C. Seshadhri </dt>
-            <dt class="venue"> <span class="note"> [To Appear] </span > PNAS 2024</dt>
-          <!--
+            <dt class="venue"> PNAS 2024</dt>
             <dt>
-              <button id='paper-button' class="wip-button" onclick="toggleAbstract('paper')"> 
+              <button id='paper-button' class="text-button" onclick="toggleAbstract('paper')"> 
                  Abstract <i class="fas fa-arrow-down"></i>
               </button>
-              <a class="wip-button" href="" target="_blank"> ArXiv <i class="ai ai-arxiv"></i> </a>
-              <a class="wip-button" href="" target="_blank"> PDF <i class="far fa-file"></i> </a>
+              <!--
+                <a class="text-button" href="" target="_blank"> ArXiv <i class="ai ai-arxiv"></i> </a>
+              -->
+              <a class="text-button" href="https://www.pnas.org/doi/epdf/10.1073/pnas.2312527121" target="_blank"> PDF <i class="far fa-file"></i> </a>
             </dt>
-            <dt class="abstract" id="paper"><div> 
-            Placeholder
-            </div></dt>
-          -->
+            <dt class="abstract" id="paper">
+              <div> 
+                Graph representation learning is a fundamental technique for machine learning (ML) on complex networks.
+                Given an input network, these methods represent the vertices by low-dimensional real-valued vectors.
+                These vectors can be used for a multitude of downstream ML tasks. We study one of the most important such task, link prediction.
+                Much of the recent literature on graph representation learning has shown remarkable success in link prediction.
+                On closer investigation, we observe that the performance is measured by the AUC (area under the curve), which suffers biases.
+                Since the ground truth in link prediction is sparse, we design a vertex-centric measure of performance, called the VCMPR@k plots.
+                Under this measure, we show that link predictors using graph representations show poor scores.
+                Despite having extremely high AUC scores, the predictors miss much of the ground truth
+                We identify a mathematical connection between this performance, the sparsity of the ground truth, and the low-dimensional geometry of the node embeddings.
+                Under a formal theoretical framework, we prove that low-dimensional vectors cannot capture sparse ground truth using dot product similarities (the standard practice in the literature).
+                Our results call into question existing results on link prediction and pose a significant scientific challenge for graph representation learning.
+                The VCMPR plots identify specific scientific challenges for link prediction using low-dimensional node embeddings.
+              </div>
+            </dt>
           </dl>
         </div>
 
@@ -109,9 +122,6 @@
           <div class='awards top'>
             <h5> Honors & Awards </h5>
             <ul class="top large">
-            <!--
-              <li> University of Pennsylvania Graduate Fellowship, 2023-2024</li> 
-            -->
               <li> Highest Honors in the Major (Computer Science), UC Santa Cruz, 2021 </li>
               <li> Highest Honors in the Major (Mathematics), UC Santa Cruz, 2021 </li>
               <li> University Honors, UC Santa Cruz, 2021 </li> 
@@ -140,6 +150,14 @@
           </div>
         </div>
         <script>
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          var element = document.body;
+          element.classList.toggle("dark-mode");
+        }
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+          var element = document.body;
+          element.classList.toggle("dark-mode");
+        });
         function darkMode() {
           var element = document.body;
           element.classList.toggle("dark-mode");
@@ -156,7 +174,6 @@
           }
         }
         </script>
-
       </td>
     </tr>
   </table>
